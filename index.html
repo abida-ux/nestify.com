@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maseno Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner Section -->
+    <section id="banner">
+        <div class="banner-text">
+            <h1>NESTIFY</h1>
+            <p>Choose the best life</p>
+            <div class="banner-btn">
+                <a href="#feature"><span></span>Find Out</a>
+                <a href="#service"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Navigation -->
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#review">REVIEWS</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Menu Button -->
+    <div id="menubtn">
+        <img src="images/menu.png" id="menu" alt="menu">
+    </div>
+
+    <!-- Features Section -->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Quality Assurance in Hostel Booking</h1>
+                <div class="features-desc">
+                    <div class="features-icon"></div>
+                    <div class="features-text">
+                        <p>Hostel booking made easy. Life made easier.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="images/banner.jpg" alt="banner image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h4>Room Booking. <br>
+                Book hostels around Maseno easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.<br><br>
+                24/7 Customer Support. <br>
+                Our customer support team is available around the clock to assist you with any queries or concerns.<br><br>
+                Free Wi-Fi. <br>
+                Stay connected with our high-speed internet available in all rooms and common areas.<br><br>
+                Housekeeping. <br>
+                Enjoy clean and comfortable rooms with our daily housekeeping service.
+            </h4>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="review">
+        <div class="title-text">
+            <p>REVIEWS</p>
+            <h1>What Clients Say</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <p>Book rooms easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.</p>
+            </div>
+            <div class="testimonial-col">
+                <p>Book rooms easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.</p>
+            </div>
+            <div class="testimonial-col">
+                <p>Book rooms easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2025 Maseno Homes. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle menu visibility for side navigation
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+
+        menubtn.onclick = function() {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+            } else {
+                sidenav.style.right = "-250px";
+            }
+        }
+
+        // Smooth scroll functionality
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000
+        });
+    </script>
+</body>
+</html>

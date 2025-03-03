@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h2>Login</h2>
+            <form id="login" action="register.php" method="POST">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a href="#" id="showRegisterForm">Register</a></p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerForm" style="display:none;">
+            <h2>Register</h2>
+            <form id="register" action="register.php" method="POST">
+                <div>
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" name="username" required>
+                </div>
+                <div>
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div>
+                    <label for="role">Select Role:</label>
+                    <select name="role" id="role" required>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="#" id="showLoginForm">Login</a></p>
+        </div>
+    </div>
+
+    <!-- JavaScript for form toggling -->
+    <script src="script.js"></script>
+</body>
+</html>
